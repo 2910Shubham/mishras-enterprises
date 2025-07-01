@@ -4,13 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText } from "lucide-react";
 
 const licenseTypes = [
-	{
-		title: "Food Safety License",
-		description: "FSSAI certifications for all our operational locations",
-		document: "FSSAI_Certificate.pdf",
-		thumbnail: "/assets/certificates/FSSAI_Certificate.jpg",
-		icon: FileText,
-	},
+	// {
+	// 	title: "Food Safety License",
+	// 	description: "FSSAI certifications for all our operational locations",
+	// 	document: "FSSAI_Certificate.pdf",
+	// 	thumbnail: "/assets/certificates/FSSAI_Certificate.jpg",
+	// 	icon: FileText,
+	// },
 	{
 		title: "MSME Registered",
 		description: "MSME Registered Unit",
@@ -18,13 +18,13 @@ const licenseTypes = [
 		thumbnail: "/assets/certificates/msme.png",
 		icon: FileText,
 	},
-	{
-		title: "GST Certificates",
-		description: "Staff health and hygiene certifications",
-		document: "Health_Certificates.pdf",
-		thumbnail: "/assets/certificates/Health_Certificates.jpg",
-		icon: FileText,
-	},
+	// {
+	// 	title: "GST Certificates",
+	// 	description: "Staff health and hygiene certifications",
+	// 	document: "Health_Certificates.pdf",
+	// 	thumbnail: "/assets/certificates/Health_Certificates.jpg",
+	// 	icon: FileText,
+	// },
 ];
 
 const Licenses = () => {
@@ -80,9 +80,13 @@ const Licenses = () => {
 								</p>
 								<div className="flex items-center gap-2 p-2 bg-gold-light rounded-lg">
 									<FileText className="w-4 h-4 text-royalblue" />
-									<span className="text-sm font-medium text-royalblue">
-										{license.document}
-									</span>
+									 <a
+            href={license.thumbnail.replace(/\.(png|jpg|jpeg)$/i, ".pdf")}
+            download
+            className="text-sm font-medium text-royalblue underline hover:text-royalblue/70"
+        >
+            {license.document}
+        </a>
 								</div>
 							</CardContent>
 						</Card>

@@ -35,13 +35,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/sikati.in/?igsh=eTloMnR5d3pscmF5&utm_source=ig_contact_invite#"
+                href="#"
                 className="text-gold hover:text-white transition-colors hover-scale"
               >
                 <Instagram size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/sikati-enterprises-069a91359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                href="# "
                 className="text-gold hover:text-white transition-colors hover-scale"
               >
                 <Linkedin size={20} />
